@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "agentstack"
+version = "0.1.0"
+description = "A framework for building multi-agent LLM systems"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "agentstack", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.0.0"
+openai = "^1.0.0"
+numpy = "^1.24.0"
+PyYAML = "^6.0.0"
+chromadb = "^0.4.0"
+docker = "^6.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+pytest-asyncio = "^0.21.0"
+black = "^23.0.0"
+isort = "^5.12.0"
+mypy = "^1.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"

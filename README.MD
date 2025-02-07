@@ -1,0 +1,1 @@
+A lightweight, extensible Python framework for building and orchestrating AI agent interactions.
